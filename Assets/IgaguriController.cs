@@ -19,6 +19,7 @@ public class IgaguriController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision) {
         rb.isKinematic=true;
+        GetComponent<ParticleSystem>().Play();
         //Destroy(collision.gameObject);
     }
 }
